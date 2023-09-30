@@ -26,10 +26,12 @@
     {   
         $u = mysqli_fetch_assoc($query);
         $Usertype = $u['usertype'];
+        $Userid = $u['id'];
 
 
         $_SESSION['username'] = $Username;
         $_SESSION['usertype'] = $Usertype;
+        $_SESSION['userid'] = $Userid;
 
         $_SESSION['id'] = session_id();
 

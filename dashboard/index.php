@@ -1,5 +1,24 @@
 
-<?php include('includes/header.php') ?>
+<?php 
+  include('includes/header.php') ;
+  require('../php-includes/connect.php');
+
+  $userid = $_SESSION['userid'];
+
+  $query = mysqli_query($con, "SELECT * FROM leaves WHERE userid = '$userid' ");
+
+  // $my_leaves = array();
+  // while(mysqli_fetch_assoc($query))
+  // {
+  //     $my_leaves["
+  //     {
+  //       'reason': 'startdate',
+  //       'enddate': 'status',
+  //       'comment'
+  //     }"
+  //   ];
+  // }
+?>
 
     <div class="pagetitle">
       <h1>Dashboard</h1>
@@ -21,7 +40,7 @@
               <h5 class="card-title">Employee Leave Request</h5>
 
               <!-- General Form Elements -->
-              <form>
+              <form action="leave-request.php" method="post">
                 
                 <div class="row mb-3">
                   <label for="inputDate" class="col-sm-2 col-form-label">Start Date</label>
@@ -39,7 +58,7 @@
                 <div class="row mb-3">
                   <label for="inputPassword" class="col-sm-2 col-form-label">Reason for leave</label>
                   <div class="col-sm-10">
-                    <textarea class="form-control" style="height: 100px"></textarea>
+                    <textarea class="form-control" style="height: 100px" name="reason"></textarea>
                   </div>
                 </div>
                
@@ -77,25 +96,6 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>2016-05-25</td>
-                    <td>2016-05-25</td>
-                    <td>Brandon Jacob</td>
-                    <td>Cancelled</td>
-                  </tr>
-                  <tr>
-                    <td>2014-12-05</td>
-                    <td>2014-12-05</td>
-                    <td>Bridie Kessler</td>
-                    <td>Approved</td>
-                    
-                  </tr>
-                  <tr>
-                    <td>2014-12-05</td>
-                    <td>2011-08-12</td>
-                    <td>Ashleigh Langosh</td>
-                    <td>Pending</td>
-                  </tr>
                   <tr>
                     <td>2014-12-05</td>
                     <td>2012-06-11</td>
