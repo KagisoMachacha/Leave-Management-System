@@ -1,36 +1,22 @@
-# Leave-Management-System
+# Leave Management System
 
+* Leave Management System that allows administrators to manage and approve leave requests.
+* Allows Employees to request leave without overlapping days and feedback on the leaves they make.
 
-# Prerequisites:
+# How to run the project: 
 
-Web Server: You'll need a web server to host your PHP files. Apache, Nginx, or XAMPP (which includes Apache and MySQL) are popular choices. For this example, we'll use XAMPP.
+# Pre-requisites:
 
-MySQL Database: You need a MySQL database to store employee and leave request data.
+* Web Server: You'll need a web server to host your PHP files. Apache, Nginx, or XAMPP (which includes Apache and MySQL) are popular choices. For this project I'm using XAMPP.
+* MySQL Database: You need a MySQL database to store users and leave request data.
+* Text Editor or Integrated Development Environment (IDE): Choose a text editor like Visual Studio Code, Sublime Text.
 
-Text Editor or Integrated Development Environment (IDE): Choose a text editor like Visual Studio Code, Sublime Text, or use an IDE like PHPStorm for coding.
+# Installations:
 
-# Instructions:
-
-Install XAMPP:
-
-Download and install XAMPP from the official website.
-Start the Apache and MySQL services from the XAMPP control panel.
-Create the Database:
-
-Open phpMyAdmin by going to http:/localhost/phpmyadmin in your web browser.
-Create a new database for your project. For example, you can name it leave_management.
-Import the Database Schema:
-
-In phpMyAdmin, select your newly created database (leave_management).
-Import the database schema by selecting "Import" and uploading the SQL file that contains the schema.
-Set Up the Project Files:
-
-Create a new folder for your project in the XAMPP htdocs directory. For example, you can name it leave-management.
-Place your PHP files (e.g., index.php, employee.php, admin.php, and other scripts) in this folder.
-Database Connection:
-
-In your PHP scripts, ensure that you include the correct database connection details in the db_connection.php file (as mentioned in previous responses). Replace placeholders with your database credentials.
-Access the Project:
-
-Open your web browser and navigate to http:/localhost/leave-management-system/index.php to access the login page.
-You can then log in using the provided credentials.
+1. Clone the project on https://github.com/KagisoMachacha/Leave-Management-System.git.
+2. Put this file inside "c:/xampp/htdocs/" if you're using XAMPP.
+3. Database Configuration
+* Open your Apache server and run the apache service and your mysql service
+* Open Your browser Navigate to this url: http://localhost/phpmyadmin/
+Import database demo_db.sql from downloaded folder(inside database)
+4. Open Your browser and navigate to this url: "http://localhost/Leave-management-system/" to navigate to the login page. You can login using the provided credentials(on the users Table in the database).
