@@ -48,11 +48,8 @@
     {
 
         echo '<script>
-
                 alert("email or password is incorrect!");
-
                 window.location.assign("index.php");
-
             </script>';
 
     }
@@ -61,9 +58,6 @@
     
 
 ?>
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -147,9 +141,6 @@
 
                 </div>
               </div>
-
-             
-
             </div>
           </div>
         </div>
