@@ -20,4 +20,4 @@
 * Open Your browser Navigate to this url: http://localhost/phpmyadmin/
 * Create database called demo_db
 * Import database demo_db.sql from downloaded folder(inside created database)
-4. Open Your browser and navigate to this url: "http://localhost/Leave-management-system/" to navigate to the login page. You can login using the provided credentials(on the users Table in the database).
+4. Open Your browser and navigate to this url: http://localhost/Leave-Management-System/ to navigate to the login page. You can login using the provided credentials(on the users Table in the database).
