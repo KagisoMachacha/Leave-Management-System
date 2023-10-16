@@ -1,3 +1,6 @@
+// Kagiso Machacha
+
+
 <?php 
     $db_name="demo_db";
 
